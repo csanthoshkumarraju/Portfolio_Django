@@ -1,0 +1,1259 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title> Chiluru Santhosh Kumar Raju - Portfolio</title>
+    
+    <meta name="viewport" 
+          content="width=device-width,
+                   initial-scale=1.0">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<link rel="stylesheet" href="{% static 'portfolio.css' %}">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/svgs/solid/user-circle.svg" type="image/svg+xml">
+    <link rel="icon" href="photo/WhatsApp Image 2024-11-27 at 22.42.50.jpeg" type="image/jpeg">
+</head>
+
+<body>
+    <div class="nav-bar-logo">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Chiluru Santhosh Kumar Raju.</label>
+        <ul>
+            
+            <li><a href="#personal-photo-section">Home</a></li>
+            <li><a href="#About-section-id">About</a></li>
+            <li><a href="#Experience-section-id">Experience</a></li>
+            <li><a href="#Education-section-id">Education</a></li>
+            <li><a href="#Certificates-section-id">Certificates</a></li>
+            <li><a href="#Projects-section-id">Projects</a></li>
+            <li><a href="#Skills-section-id">Skills</a></li>
+            <li><a href="#Awards-section-id">Honours & Awards</a></li>
+            <li><a href="#contact-section-id">Contact</a></li>
+
+        </ul>
+    </nav>
+</div>
+
+<!-- home Start -->
+
+<section class="personal-photo-section" id="personal-photo-section">
+    <div class="content-left">
+      <h1 class="greeting">Hi, Myself</h1>
+      <h1 class="name">Chiluru Santhosh Kumar Raju</h1>
+      <!-- <p class="profession">And I am a Web app developer.</p> -->
+      <div>
+      <!-- <p id="profession">I am a</p> -->
+      <p id="profession"><span class="static-text">I am a</span> <span class="dynamic-text"></span></p>
+    </div>
+      <p class="description">I collect requirement data in Excel, performing data analysis like removing duplicates, cleaning, and fixing incorrect information using Python’s openpyxl. I then migrate the cleaned data to Oracle DB, validating if the Excel data matches the Oracle EBS data. I run Oracle procedures, manage duplicates in the DB, and monitor Apache Airflow DAGs, analyzing failures and reporting to developers or restarting the DAGs as needed. I also move files from FileZilla to DB to AWS, restart procedures from AWS, and use Databricks SQL to fetch data.</p>
+      
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/chiluru-santhosh-kumar-raju-61ba1421a/" class="linkedin-icon" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/csanthoshkumarraju" class="github-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="{% static "photo/chiluru_santhosh_resume.pdf" %}" download>
+          <button class="download-cv-btn">
+            <i class="fa-regular fa-circle-down"></i> Download CV
+          </button>
+        </a>
+        
+    </div>
+    
+      
+    </div>
+    <div class="photo-right">
+      <img src="{% static 'photo/IMG_20241118_213826.jpg' %}" alt="Santhosh Photo">
+    </div>
+  </section>
+  
+  <div class="experience">
+    <!-- <div class="content">
+        <div class="number">2+ </div>
+        <div class="text">Years of experience</div>
+    </div>
+    <div class="content">
+        <div class="number">3</div>
+        <div class="text">projects</div>
+    </div>
+    <div class="content">
+        <div class="number">15+</div>
+        <div class="text">skills</div>
+    </div>
+    <div class="content">
+        <div class="number">170+</div>
+        <div class="text">Udemy learning hours</div>
+    </div>
+    <div class="content">
+        <div class="number">300+</div>
+        <div class="text">code commits</div>
+    </div>
+    <div class="content">
+        <div class="number">30+</div>
+        <div class="text">Udemy courses</div>
+    </div> -->
+
+    <div class="content">
+        <div id="number1" class="number">2+</div>
+        <div class="text">Years of experience</div>
+    </div>
+    <div class="content">
+        <div id="number2" class="number">3</div>
+        <div class="text">projects</div>
+    </div>
+    <div class="content">
+        <div id="number3" class="number">35+</div>
+        <div class="text">skills</div>
+    </div>
+    <div class="content">
+        <div id="number4" class="number">170+</div>
+        <div class="text">Udemy learning hours</div>
+    </div>
+    <div class="content">
+        <div id="number5" class="number">300+</div>
+        <div class="text">code commits</div>
+    </div>
+    <div class="content">
+        <div id="number6" class="number">30+</div>
+        <div class="text">Udemy courses</div>
+    </div>
+    
+
+</div>
+
+
+  
+      
+<!-- home End-->
+
+
+<!-- About Start -->
+
+<section class="About-section-class" id="About-section-id">
+
+<h1 class="about-heading"> About Me</h1>
+
+<p class="about-para">As a <b>Systems Engineer</b> at <b>Tata Consultancy Services (TCS)</b> with over 2 years of experience, I specialize in delivering enterprise solutions across the manufacturing and distribution domains. Throughout my career, I have been focused on optimizing complex processes, analyzing large datasets, and implementing technical solutions for European clients. In my first project, I worked extensively with <b>Oracle Advanced Pricing</b> to manage and optimize pricing strategies for manufacturing clients. My role involved creating and maintaining price lists, applying pricing modifiers such as discounts, surcharges, and promotional pricing, and managing complex pricing scenarios. I performed detailed data analysis to identify and eliminate pricing discrepancies, prepared data using <b>Excel</b> (Pivot, VLOOKUP) and <b>Python OpenPyxl</b>, and ensured accurate data uploads to <b>Oracle EBS</b> and the database. This hands-on experience enhanced my skills in <b>Oracle SQL</b>, <b>Oracle PL/SQL</b>, and data preparation techniques.</p>
+
+<p class="about-para">In my second project, I focused on data movement and storage optimization. My responsibilities included transferring files from <b>FileZilla</b> to <b>AWS S3</b>, troubleshooting and resolving issues in the <b>DB</b> and <b>AWS</b> environments, and analyzing data logs to identify root causes of issues. I monitored <b>Apache Airflow Dags</b>, analyzing and resolving failed tasks, and worked with data stored in <b>Databricks SQL</b>. I also handled daily reporting on critical issues and resolved <b>JIRA</b> tickets. This project strengthened my proficiency in <b>AWS</b>, <b>Apache Airflow</b>, <b>Informatica</b>, and <b>JIRA</b>.</p>
+
+<p class="about-para">In addition to my professional work, I am committed to continuous learning and upskilling. In my personal time, I have developed 3 <b>Django web applications</b>, gaining hands-on experience with <b>full-stack web development</b>. I have also completed over 30 <b>Udemy courses</b>, accumulating more than 170 hours of learning in areas such as <b>Python</b>, <b>Django</b>, <b>cloud technologies</b>, and <b>data analysis</b>. This passion for learning drives me to stay updated on industry trends and improve my technical skills.</p>
+
+<p class="about-para">Throughout both my professional and personal projects, I have honed my abilities in <b>data analysis</b>, <b>web development</b>, and <b>cloud technologies</b>, with a constant focus on quality, system optimization, and continuous improvement. I thrive in dynamic environments where problem-solving, innovation, and adaptability are key to delivering results. Holding a <b>Bachelor’s degree in Computer Science & Engineering</b>, I am passionate about solving complex business challenges and contributing to innovative solutions in the tech industry.</p>
+
+
+</section>
+
+<!--  About end  -->
+
+<!-- Exeperience Start -->
+
+<section class="Experience-section-class" id="Experience-section-id">
+
+<h1 class="Experience-heading"> Experience </h1>
+
+<div class="experience-container">
+    <div class="experience-item">
+        <h4 class="experience-company"><b class="company-label">Company: </b>Tata Consultancy Services (TCS)</h4>
+    </div>
+    <div class="experience-item">
+        <h4 class="experience-designation"><b class="designation-label">Designation: </b>Systems Engineer</h4>
+    </div>
+    <div class="experience-item">
+        <h4 class="experience-role"><b class="role-label">Role: </b>Engineer (Enterprise Solutions Unit)</h4>
+    </div>
+    <div class="experience-item">
+        <h4 class="experience-years"><b class="years-label">Experience: </b>2+ years</h4>
+    </div>
+</div>
+
+
+<div class="experinence-boxes-div">
+    <div class="experience-box">
+         <h2 class="project-title">First Project</h2>
+         <div class="duration"><h4>DEC 2022 - MAR 2024</h4></div>
+         <p class="project-description">I worked extensively with Oracle Advanced Pricing to manage and optimize pricing strategies for manufacturing clients. My role involved creating and maintaining price lists, applying pricing modifiers such as discounts, surcharges, and promotional pricing, and managing complex pricing scenarios. I performed detailed data analysis to identify and eliminate pricing discrepancies, prepared data using Excel (Pivot, VLOOKUP) and Python OpenPyxl, and ensured accurate data uploads to Oracle EBS and the database. This hands-on experience enhanced my skills in Oracle SQL, Oracle PL/SQL, and data preparation techniques.</p>
+      
+    </div>
+   
+   <div class="experience-box">
+         <h2 class="project-title">Second Project</h2>
+         <div class="duration"><h4>MAR 2024 - Current</h4></div>
+         <p class="project-description">I focused on data movement and storage optimization. My responsibilities included transferring files from FileZilla to AWS S3, troubleshooting and resolving issues in the DB and AWS environments, and analyzing data logs to identify root causes of issues. I monitored Apache Airflow Dags, analyzing and resolving failed tasks, and worked with data stored in Databricks SQL. I also handled daily reporting on critical issues and resolved JIRA tickets. This project strengthened my proficiency in AWS, Apache Airflow, Informatica, and JIRA.</p>
+     
+      
+    </div>
+   
+   
+ </div>
+
+
+</section>
+
+
+<!-- Exeperience End -->
+
+
+<!-- Education start -->
+
+<section class="Education-section-class" id="Education-section-id">
+
+
+<h1 class="Education-heading"> Education </h1>
+
+<div class="Education-boxes-div">
+    <div class="Education-box">
+         <h2 class="Education-title"> Bachelor of Technology (B.Tech) </h2>   
+         <div class="Education-description">
+            <div class="Education-duration">
+              <h4 class="edu-du">2018 - 2022</h4>
+            </div>
+            <div class="edu-det"> College : <b class="company-label">  KMM Institute Of Technology And Science (Affiliated to the JNTUA) </b></div>
+            <div class="edu-det"> Branch :  <b class="company-label">  Computer Science & Engineering (CSE)</b></div>
+            <div class="edu-det"> CGPA : <b class="company-label"> 7.92 </b></div>
+        </div>
+          
+      
+    </div>
+
+    <div class="Education-box">
+        <h2 class="Education-title"> Intermediate Education (BIEAP) </h2>   
+        <div class="Education-description">
+           <div class="Education-duration">
+             <h4 class="edu-du"> 2016 - 2018 </h4>
+           </div>
+           <div class="edu-det"> College : <b class="company-label">  C.N. Raju Jr. College</b></div>
+           <div class="edu-det"> Branch :  <b class="company-label">  Mathematics, Physics, and Chemistry (MPC) </b></div>
+           <div class="edu-det"> Percentage : <b class="company-label"> 91.4 % </b></div>
+       </div>
+     
+   </div>
+
+   <div class="Education-box">
+    <h2 class="Education-title"> Secondary Education (BSEAP) </h2>   
+    <div class="Education-description">
+       <div class="Education-duration">
+         <h4 class="edu-du"> 2015 - 2016 </h4>
+       </div>
+       <div class="edu-det"> School : <b class="company-label">  Rainbow High School </b></div>
+       <!-- <div class="edu-det"> Branch :  <b class="company-label"> Mathematics, Science, Social.  </b></div> -->
+       <div class="edu-det"> CGPA : <b class="company-label"> 9.8 </b></div>
+   </div>
+     
+ 
+</div>
+
+ </div>
+
+</section>
+
+<!-- Education End -->
+
+
+<!-- Certifictes start -->
+
+<section class="Certificates-section-class" id="Certificates-section-id">
+    <h1 class="Certificates-heading"> Udemy Certificates </h1>
+
+
+    <div class="certificate-container">
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/118059830 (1).jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+
+                <p class="all-skills">
+                    Python, Pygame, Game Development, Pycharm, Game Mechanics
+                  </p>
+                  
+                                
+            </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-ac3d252e-91b8-4083-8153-2717cbc9a142/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="certificate">
+          <div class="image-container">
+            <img src=" {% static "photo/117600376 (1).jpg" %} " alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Tkinter, Python, Object-Oriented Programming, GUI Development, Web API Integration
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-dab076a5-a05d-42c4-aa32-0fb6c298be16/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="certificate">
+          <div class="image-container">
+            <img src=" {% static "photo/117252014 (1).jpg" %} " alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Django, Python, AWS, Postgres, eCommerce Development 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-baOde383-982c-4e1a-b3ed-edb127c5d745/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/116645488 (1).jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Windows Server 2019, Data Center Design, Hyper-V, Server Management, Virtualization  
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-bbfa3235-cc63-4a4f-b449-adc3488ea0a8/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/115968952 (1).jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Django, Python, Web Development, Model-View-Template, Database Management 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-f24b3b32-b2bf-49c6-be97-d3a8a5a7cc7a/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/116394512 (1).jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  System Design, Distributed Systems, Design Patterns, UML, Agile 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-66a47c25-d905-4637-984b-a01ae2fc6295/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/115735122 (1).jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Windows Server 2022, IT Infrastructure, Active Directory, DNS, DHCP 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-0791535b-Odac-4cff-b772-28f84bc7270a/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/106020402.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Python, Coding Exercises, Functions, Regular Expressions, Object-Oriented Programming
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-9d004cf1-Ofle-42f3-bb03-494f60489e49/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/112448536.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Python, NumPy, Pandas, Data Collection, Data Visualization, Data Preprocessing, Data Cleaning, Data Types, Working with Text Files, Advanced Python
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-c81ad141-cdae-4055-bc67-dfad14c67b19/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/109055648.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Python, Real Projects, Programming Concepts, Self-Taught Learning, Python Projects 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-4f31f08e-eba3-4aa0-9526-a6149a7d44da/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/101064386.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Python, Data Structures, Algorithms, Big-O Notation, Jupyter Notebooks, Linked Lists, Sorting Algorithms, Graph Algorithms, Recursion
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-ef8f3b17-9bc3-4922-898f-a1a665ee83cb/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/99340032.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Python, OpenPyXL, Excel Automation, Data Manipulation, Spreadsheet Formatting
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-91779f98-c3a9-41fc-861c-15e590aee604/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/105475020.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Power BI, Data Visualization, DAX, Data Transformation, Power BI Service
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-7b13928e-d54f-4c6a-93dO-a9b25ae9254b/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/87599608.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Oracle SQL, SQL Joins, Subqueries, Data Manipulation, SQL Commands 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-46e32796-c6de-4e14-85e7-bab8da1b9db2/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/90426016.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Microsoft Excel, Excel Functions, Pivot Tables, Financial Modeling, Data Analysis 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-dbca371d-1b85-45cc-8cdc-226366459218/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/97304840.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Python, Problem Solving, Hands-on Coding, Built-in Functions, Coding Challenges
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-251ea919-f340-4928-bcbb-a1fa74b96404/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/96788636.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Python, Command Line Basics, Functions, Object-Oriented Programming, File I/O
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-3588bcfc-d228-4573-a461-6826dfe5423e/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/95821928.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Network Hacking, Gaining Access, Post Exploitation, Website Hacking, SQL Injection
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-104807dO-d26e-47d3-918d-6e8ffba28e9d/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/88818822.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Git, Version Control, Branching, Merging, GitHub, Collaboration
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-111ef954-Odb7-4766-9ee7-5da785d6f533/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/88265472.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Lean Philosophy, Problem Solving, Root Cause Analysis, Brainstorming, PDCA Model
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-fa31a530-b0a0-4a6d-acfa-54589360c8ff/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/94920534.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  HTML, CSS, Web Design, Responsive Design, JavaScript, UI, UX, Projects
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-f8e7a775-98df-420e-a650-68ea8b98f894/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/97368188.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  ChatGPT, Google Bard, Dalle-2, Midjourney, Generative Art, AI Models, GPT Builder
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-c9b52a2b-9c14-4ec4-abee-4f4d92dd2b61/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/128930227 (1).jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Databricks, SQL, Data Analysis, Data Lakehouse, Delta File Format, Data Visualization
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-927269a1-356a-497d-a53b-8ec49a672821/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/134531339 (1) (1).jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Apache Airflow, Data Pipelines, DAGs, Kubernetes, Scaling, Monitoring
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-776589cd-6e41-41b2-985f-6e88653a63e3/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/88331762.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  PL/SQL, SQL Performance, PL/SQL Security, Database Scalability, PL/SQL Debugging, PL/SQL Triggers
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-099c344c-3921-4abe-81c5-5939flafed3a/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/134196063 (1).jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Python, Web Scraping, Automation, Sending Emails, Parsing PDFs, Excel Automation
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-962b1478-d7b4-4f4f-b63a-bf85451a8d6a/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/119924808 (1).jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Python, Automation, Web Development, APIs, Data Science, Machine Learning, OOP, Flask, Django, SQLite, MySQL
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-e9ccdea9-9c95-4463-9075-752cccd143e8/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/119646410 (1)_page-0001.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  PL/SQL, Stored Procedures, Functions, Packages, Cursors, Records, Collections
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.udemy.com/certificate/UC-c0d6b43c-c928-4a5e-891a-6e888fd74b81/" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/python_basic certificate (1)_page-0001.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  Python, Scalar Types, Operators, Control Flow, Strings
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.hackerrank.com/certificates/ffc0049dc01f" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/sql_basic certificate (1)_page-0001.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  SQL, Queries, Relationships, Aggregators
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.hackerrank.com/certificates/58f15cb9b9dc" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/sql_intermediate certificate (1)_page-0001.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  SQL, Joins, Unions, Sub-queries
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://www.hackerrank.com/certificates/d88d00bc3f9e" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/Diploma of Completion RPA Starter_page-0001.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  RPA, Automation, Bots, Workflows, UIPath
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://academy.uipath.com/learning-plans/rpa-starter" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <div class="certificate">
+          <div class="image-container">
+            <img src="{% static "photo/RPA developer foundation diploma of completion. _page-0001.jpg" %}" alt="Certificate 1" class="certificate-img">
+            <div class="back">
+              <div class="skills">
+                <h3 class="skills-heading"> Top Skills </h3>
+                <p class="all-skills">
+                  RPA, UIPath, Automation, Workflows, Bot Development
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
+            <a href="https://academy.uipath.com/learning-plans/rpa-developer-foundation" class="link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <!--  -->
+
+
+        
+
+
+      </div>
+      
+</section>
+<!-- Certifictes End -->
+
+
+<!-- Projects Start  -->
+
+<section class="Projects-section-class" id="Projects-section-id">
+  <h1 class="Projects-heading"> Projects </h1>
+
+  <!-- <div class="project-grid">
+    <div class="project-item">
+      <img src="photo/RA_favicon.jpg" alt="Image 1">
+      <a href="https://cskrajureflectionarchivedjango.pythonanywhere.com" class="project-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+    <div class="project-item">
+      <img src="photo/StudentLearnDailyfav.jpg" alt="Image 2">
+      <a href="https://cskrajustudentlearndaily.pythonanywhere.com" class="project-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+    <div class="project-item">
+      <img src="photo/VTIcon.png" alt="Image 3">
+      <a href="https://cskrajudjangoappvillagetrolley.pythonanywhere.com" class="project-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+  </div>
+   -->
+
+   <div class="project-grid">
+    <div class="project-item">
+      <img src="{% static "photo/RA_favicon.jpg" %}" alt="Image 1">
+      <div class="project-info">
+        <div class="project-name">Reflection Archive</div>
+        <div class="technologies">Django, Python, SQLite, HTML5, CSS, JavaScript, Bootstrap, Git, GitHub, UED, UI, UX</div>
+
+      </div>
+      <div class="project-links">
+        <a href="https://cskrajureflectionarchivedjango.pythonanywhere.com" class="project-link-btn">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a href="https://github.com/csanthoshkumarraju/Reflection-Archive-Djano-WeB-App" class="project-link-btn">
+          <i class="fa-brands fa-github fa-xl"></i>
+        </a>
+        <a href="https://codepen.io/CSKRaju/pen/dyxYgrM" class="project-link-btn">
+          <i class="fa-brands fa-codepen fa-lg"></i>
+        </a>
+      </div>
+    </div>
+    <div class="project-item">
+      <img src="{% static "photo/StudentLearnDailyfav.jpg" %}" alt="Image 2">
+      <div class="project-info">
+        <div class="project-name">
+          Student Learn Daily</div>
+          <div class="technologies">Django, Python, SQLite, HTML5, CSS, JavaScript, Bootstrap, Git, GitHub, UED, UI, UX</div>
+      </div>
+      <div class="project-links">
+        <a href="https://cskrajustudentlearndaily.pythonanywhere.com" class="project-link-btn">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a href="https://github.com/csanthoshkumarraju/StudentLearnDailyDjangoWEbAppFolder" class="project-link-btn">
+          <i class="fa-brands fa-github fa-xl"></i>
+        </a>
+        <a href="https://codepen.io/CSKRaju/pen/KKjeEOJ" class="project-link-btn">
+          <i class="fa-brands fa-codepen fa-lg"></i>
+        </a>
+      </div>
+    </div>
+    <div class="project-item">
+      <img src="{% static "photo/VTIcon.png" %}" alt="Image 3">
+      <div class="project-info">
+        <div class="project-name">Village Trolley</div>
+        <div class="technologies">Django, Python, SQLite, HTML5, CSS, JavaScript, Bootstrap, Git, GitHub, UED, UI, UX</div>
+
+      </div>
+      <div class="project-links">
+        <a href="https://cskrajudjangoappvillagetrolley.pythonanywhere.com" class="project-link-btn">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+        <a href="https://github.com/csanthoshkumarraju/Village_Trolley_Django_Project" class="project-link-btn">
+          <i class="fa-brands fa-github fa-xl"></i>
+        </a>
+        <a href="https://codepen.io/CSKRaju/pen/qBGpOZO" class="project-link-btn">
+          <i class="fa-brands fa-codepen fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+
+
+</section>
+
+<!-- Projects end  -->
+
+
+<!-- Skills start  -->
+
+<section class="Skills-section-class" id="Skills-section-id">
+  <h1 class="Skills-heading"> Skills </h1>
+
+  <div class="skills-container">
+    <!-- Backend / Programming Languages -->
+    <div class="skill-box"> <i class="fa-brands fa-python"></i> Python</div>
+    <div class="skill-box"> <i class="fa-brands fa-js"></i> JavaScript</div>
+    <div class="skill-box"> <i class="fa-brands fa-html5"></i> HTML5</div>
+    <div class="skill-box"> <i class="fa-brands fa-python"></i> Django</div>
+    <div class="skill-box"> <i class="fa-brands fa-python"></i> Apache Airflow</div>
+    <div class="skill-box"><i class="fas fa-cogs"></i> Automation</div>
+    <div class="skill-box"> <i class="fa-solid fa-code"></i> PyCharm</div>
+    <div class="skill-box"> <i class="fa-brands fa-git-alt"></i> Git</div>
+    <div class="skill-box"> <i class="fa-brands fa-github"></i> GitHub</div>
+    <div class="skill-box"> <i class="fa-brands fa-codepen"></i> CodePen</div>
+    <div class="skill-box"> <i class="fa-solid fa-desktop"></i> System Design</div>
+    <div class="skill-box"> <i class="fa-solid fa-object-group"></i> Object-Oriented Programming (OOP)</div>
+    <div class="skill-box"> <i class="fa-solid fa-folder-tree"></i> DSA </div>
+  
+    <!-- Databases -->
+    <div class="skill-box"><i class="fas fa-database"></i> Oracle PL/SQL</div>
+    <div class="skill-box"><i class="fas fa-database"></i> Databricks SQL</div>
+    <div class="skill-box"><i class="fas fa-database"></i> Oracle SQL</div>
+    <div class="skill-box"><i class="fas fa-database"></i> Oracle EBS</div>
+    <div class="skill-box"><i class="fas fa-database"></i> MySQL/PostgreSQL</div>
+  
+    <!-- Data Tools / Libraries -->
+    <div class="skill-box"><i class="fas fa-database"></i> Pandas</div>
+    <div class="skill-box"><i class="fas fa-database"></i> Numpy</div>
+    <div class="skill-box"><i class="fas fa-chart-line"></i> Matplotlib</div>
+    <div class="skill-box"><i class="fas fa-chart-bar"></i> Data Visualization</div>
+    <div class="skill-box"><i class="fas fa-table"></i> Excel</div>
+  
+    <!-- Frontend Technologies -->
+    <div class="skill-box"> <i class="fa-brands fa-css3-alt"></i> CSS</div>
+    <div class="skill-box"> <i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
+    <div class="skill-box"><i class="fas fa-window-restore"></i> Tkinter</div>
+  
+    <!-- UI/UX Design -->
+    <div class="skill-box"><i class="fas fa-palette"></i> UI/UX Design</div>
+  
+    <!-- Web Scraping & Cloud / DevOps -->
+    <div class="skill-box"><i class="fas fa-sitemap"></i> Web Scraping</div>
+    <div class="skill-box"> <i class="fa-brands fa-aws"></i> AWS</div>
+  
+    <!-- Reporting & Visualization Tools -->
+    <div class="skill-box"><i class="fas fa-chart-pie"></i> Power BI</div>
+  
+    <!-- AI / Chatbot -->
+    <div class="skill-box"><i class="fas fa-brain"></i> ChatGPT</div>
+  </div>
+  
+
+
+
+</section>
+
+<!-- Skills end  -->
+
+
+<!-- Awards start  -->
+
+
+<section class="Awards-section-class" id="Awards-section-id">
+  <h1 class="Awards-heading">  Awards </h1>
+
+  <div class="award-container">
+    <div class="award-img">
+      <img src="{% static "photo/On_The_Spot_Award_page-0001.jpg" %}" alt="Image 1">
+    </div>
+    <div class="award-img">
+      <img src="{% static "photo/On_the_Spot_(Team)_Award (1)_page-0001.jpg" %}" alt="Image 2">
+    </div>
+    <div class="award-img">
+      <img src="{% static "photo/Elevate_Wings_Award (1) (1)_page-0001.jpg" %}" alt="Image 3">
+    </div>
+    <div class="award-img">
+      <img src="{% static "photo/Appreciation_Certificate (1) (1)_page-0001.jpg" %}" alt="Image 4">
+    </div>
+  </div>
+  
+
+
+</section>
+
+<!-- Awards end  -->
+
+
+<!-- contact start  -->
+
+
+<section class="contact-section-class" id="contact-section-id">
+  <h1 class="contact-heading"> Contact </h1>
+
+  <div class="contact-form">
+    <h2>Contact Me</h2>
+    
+    <a href="mailto:chilurusanthoshraju@gmail.com" style="text-align: center; display: block; text-decoration: none;">
+      <h3 class="mail-to" style="color: white; text-align: center; border-bottom: 2px solid #39FF14; padding-bottom: 2.5px;">mail to: chilurusanthoshraju@gmail.com</h3>
+    </a>
+    
+    
+
+
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <div class="csb"><button class="contact-send-btn">Send</button></div>
+    </form>
+    
+    <div class="contact-social-links">
+      <a href="https://www.linkedin.com/in/chiluru-santhosh-kumar-raju-61ba1421a/" class="contact-linkedin-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/csanthoshkumarraju" class="contact-github-icon" target="_blank"><i class="fab fa-github"></i></a>
+      
+      <a href="{% static "photo/chiluru_santhosh_resume.pdf" %}" download class="dca">
+        <button class="contact-download-cv-btn">
+          <i class="far fa-arrow-alt-circle-down"></i> Download CV
+        </button>
+      </a>
+      
+    </div>
+  </div>
+
+
+</section>
+
+<!-- contact end  -->
+
+<footer>
+  <p>&copy; 2024 -  <span id="current-year"></span> <span>Thank you for visiting my portfolio </span>. CHILURU SANTHOSH KUMAR RAJU</p>
+</footer>
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    const professions = [
+        "Web App developer   ",
+        "SQL Developer   ",
+        "PL/SQL Developer  ",
+        "Web Developer   ",
+        "Python Developer   ",
+        "Django Developer   ",
+        "UI/UX Designer   ",
+        "Data Analyst   ",
+        "DSA Beginner   ",
+        "Full Stack Developer  "
+    ];
+
+    let index = 0;
+    let currentProfession = "I am a";
+    let isTyping = true;
+    let professionIndex = 0;
+
+    function typeEffect() {
+        const element = document.getElementById("profession");
+        const dynamicTextElement = element.querySelector(".dynamic-text");
+
+        if (isTyping) {
+            dynamicTextElement.textContent = professions[professionIndex].slice(0, index++);
+            if (index === professions[professionIndex].length) {
+                isTyping = false;
+                setTimeout(typeEffect, 1000);
+            } else {
+                setTimeout(typeEffect, 100);
+            }
+        } else {
+            dynamicTextElement.textContent = professions[professionIndex].slice(0, index--);
+            if (index === 0) {
+                isTyping = true;
+                professionIndex = (professionIndex + 1) % professions.length;
+                setTimeout(typeEffect, 500);
+            } else {
+                setTimeout(typeEffect, 50);
+            }
+        }
+    }
+
+    typeEffect();
+
+
+});
+
+function animateNumber(id, target) {
+    let num = 0;
+    let element = document.getElementById(id);
+    element.textContent = num + (id === 'number1' || id === 'number3' || id === 'number4' || id === 'number5' ? '+' : '');
+    
+    let increment = target / 100;  // Smooth increase
+    let interval = setInterval(() => {
+        num += increment;
+        element.textContent = Math.floor(num) + (id === 'number1' || id === 'number3' || id === 'number4' || id === 'number5' ? '+' : '');
+        
+        if (num >= target) {
+            clearInterval(interval);
+            element.textContent = target + (id === 'number1' || id === 'number3' || id === 'number4' || id === 'number5' ? '+' : '');
+        }
+    }, 20);
+}
+
+animateNumber('number1', 2);
+animateNumber('number2', 3);
+animateNumber('number3', 35);
+animateNumber('number4', 170);
+animateNumber('number5', 300);
+animateNumber('number6', 30);
+
+
+const navLinks = document.querySelectorAll('nav ul li a');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        navLinks.forEach(link => link.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+
+document.querySelectorAll('.rotate-btn').forEach(button => {
+  button.addEventListener('click', function() {
+    const imageContainer = this.closest('.certificate').querySelector('.image-container');
+    imageContainer.classList.toggle('flipped');
+  });
+});
+
+document.getElementById('current-year').textContent = new Date().getFullYear();
+
+
+</script>
+
+</body>
+
+</html>
